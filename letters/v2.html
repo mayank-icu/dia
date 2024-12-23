@@ -129,6 +129,15 @@ button[type="submit"]:hover {
         </form>
     </div>
 </div>
+
+<audio id="background-music" src="../assets/audios/song.mp3" autoplay loop></audio>
+<script>
+  // Optional: Ensure autoplay works in case browsers require interaction
+  const audio = document.getElementById('background-music');
+  document.addEventListener('DOMContentLoaded', () => {
+      audio.play().catch(error => console.log('Autoplay failed:', error));
+  });
+</script>
 <!-- partial -->
   <script  src="../assets/js/letterv2.js"></script>
 
